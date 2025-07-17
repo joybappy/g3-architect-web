@@ -8,6 +8,11 @@
     font-style: normal;
 }
 
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* shared style */
 .display-flex {
     display: flex;
@@ -68,7 +73,7 @@
     padding: 20px;
     border-radius: 10px;
     border: none;
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .banner-content {
@@ -78,8 +83,37 @@
 }
 
 .banner figure img {
+    display: inline-block;
     width: 100%;
+    margin-bottom: 60px;
 }
+
+.teams {
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 80px 130px auto auto;
+}
+
+.team-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.quick-list {
+    font-size: 2.8rem;
+    margin: 0 auto;
+}
+
+.teams-features .feature-text {
+    color: #FF900E;
+}
+
+.teams-features .btn-primary {
+    margin: 0 auto;
+}
+
 
 /* responsive media */
 @media screen and (max-width:575px) {
