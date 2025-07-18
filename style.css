@@ -133,6 +133,16 @@ main>section {
     gap: 50px;
 }
 
+.features-and-cards-left {
+    max-width: 675px;
+
+}
+
+.image-right {
+    max-width: 675px;
+}
+
+
 .features-and-cards-left h3 {
     font-size: 2.8rem;
     font-weight: 700;
@@ -161,6 +171,8 @@ main>section {
 /* floating section */
 .floating-section {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .floating-item {
@@ -189,8 +201,15 @@ main>section {
 
 /* fact card section */
 .fact-cards-container {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
+    gap: 50px;
+}
+
+
+.some-facts {
+    text-align: center;
 }
 
 #some-facts-title {
@@ -201,10 +220,9 @@ main>section {
 
 .fact-card {
     height: 240px;
-    width: 240px;
+    max-width: 240px;
     border: 1px solid #FF900E;
     border-radius: 10px;
-    padding: px;
     text-align: center;
     align-content: center;
 }
@@ -236,11 +254,51 @@ main>section {
     .teams-features {
         text-align: center;
     }
+
+    .some-facts {
+        text-align: center;
+    }
+
+    .fact-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    .features-will-love {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image-right img {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 740px) and (max-width: 992px) {
+@media screen and (min-width: 746px) and (max-width: 1150px) {
     .teams {
         flex-direction: column;
         text-align: center;
+    }
+
+    .fact-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    .some-facts {
+        text-align: center;
+    }
+
+    .features-will-love {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image-right img {
+        width: 100%;
     }
 }
