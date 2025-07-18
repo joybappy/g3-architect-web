@@ -257,6 +257,17 @@ main>section {
 .sponsor-image-container {
     margin-top: 50px;
     justify-content: space-between;
+    filter: grayscale();
+}
+
+/* footer section */
+.footer-bg {
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    height: 100px;
+    max-width: 1400px;
+    border-radius: 10px;
 }
 
 /* responsive media */
