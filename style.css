@@ -130,7 +130,7 @@ main>section {
 
 /* features you will love section */
 .features-will-love {
-    gap: 50px;
+    gap: 150px;
     padding: 30px;
 }
 
@@ -169,35 +169,24 @@ main>section {
     margin: 0;
 }
 
-/* floating section */
-.floating-section {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.floating-item {
-    display: grid;
-    justify-content: center;
-    align-content: center;
+/* experience badge */
+#experience-badge {
     background-color: #FF900E;
-    width: 340px;
-    height: 200px;
+    border: none;
     border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: -120px;
+    margin-left: -80px;
 }
 
-.floating-item h3 {
+#experience-year {
     font-size: 4rem;
-    font-weight: 700;
-    color: white;
-    margin: 0;
 }
 
-.floating-item p {
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: white;
-    margin: 0;
+#text-experience {
+    font-size: 1.25rem;
 }
 
 /* fact card section */
@@ -211,7 +200,7 @@ main>section {
 
 
 .some-facts {
-    text-align: center;
+    text-align: left;
 }
 
 #some-facts-title {
